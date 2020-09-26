@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Movies</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html" class="navbar-brand"><button id="brand" class="btn">365</button></a>
+            <a href="movies.html">Movies</a>
+            <a href="">TV Series</a>
+            <a href="">Audio</a>
+        </div>
+    </header>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="padding-top:0;">
+      <div class="carousel-inner" style="padding-top:0; padding-bottom: 0;">
+        <div class="carousel-item active" style="padding-top:0; padding-bottom: 0;">
+          <img src="movies/camera.jpg" class="d-block w-100" width="100%" height="570px">
+        </div>
+        <div class="carousel-item" style="padding-top:0; padding-bottom: 0;">
+          <img src="movies/movie1.jpg" class="d-block w-100"  width="100%" height="570px" >
+        </div>
+        <div class="carousel-item" style="padding-top:0; padding-bottom: 0;">
+          <img src="movies/movie2.jpg" class="d-block w-100" width="100%" height="570px">
+        </div>
+        <div class="carousel-item" style="padding-top:0; padding-bottom: 0;">
+          <img src="movies/movie3.jpg" class="d-block w-100" width="100%" height="570px">
+        </div>
+        <div class="carousel-item" style="padding-top:0; padding-bottom: 0;">
+          <img src="movies/popcorn.jpg" class="d-block w-100" width="100%" height="570px">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>   
+          <!-- genre selection -->
+          <!-- <div>
+            <a onmouseover="allMovies(event)">All</a>
+            <a onmouseover="actionMovies(event)">Action</a>
+          </div> -->
+          
+          <!-- Movies Images -->
+          <div class="popularaction">
+            <!-- <div class="genre">
+              <select>
+                <option value="Genre" aria-disabled="true">Genre</option>
+                <option value="All">All</option>
+                 <option value="">Action</option>
+                <option value="All">Drama</option>
+                <option value="All">Sci-Fi</option>
+              </select> -->
+              <div class="dropdown">
+                <button class="dropbtn"><a href="">Genre<i class="fa fa-caret-down" aria-hidden="true"></i></a></button>
+                <div class="dropdown-content">
+                  <a href="" onclick="allMovies(event)">All</a>
+                  <a href="" onclick="actionMovies(event)">Action</a>
+                  <a href="" onclick="dramaMovies(event)">Drama</a>
+                  <a href="" onclick="scifiMovies(event)">Sci-Fi</a>
+                </div>
+              </div>
+              <input  type="search" placeholder="Search your favorite movie title" onkeyup="searchMovies(this.value)" id="searchValue"> 
+            </div>
+            <div class="actionwrapper" id="movies">
+            </div>
+           </div>
+           </div>
+           <footer id="footer">
+            <div>
+              <a href="" class="navbar-brand" style="padding-left: 50px;"><button id="brand" class="btn">365</button></a>
+              <p style="color: black; font-weight: 100;">Powered by 360 Entertainment Portal 2020.All Rights Reserved.</p>
+            </div>
+          </footer>  
+
+
+          <script src="index.js"></script>
+
+</body>
+</html>
